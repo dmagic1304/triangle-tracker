@@ -17,6 +17,10 @@ function triangleMath(e) {
   const b = parseInt(document.getElementById("number-two").value);
   const c = parseInt(document.getElementById("number-three").value);
 
+  document.getElementById("not-triangle").setAttribute("class", "hidden");
+  document.getElementById("equilateral").setAttribute("class", "hidden");
+  document.getElementById("icosceles").setAttribute("class", "hidden");
+  document.getElementById("scalene").setAttribute("class", "hidden");
    
   if(a + b <= c || a + c <= b || b + c <= a){ 
     document.getElementById("not-triangle").removeAttribute("class");
@@ -32,4 +36,5 @@ function triangleMath(e) {
 window.addEventListener("load", function(){
   const form = document.querySelector("form");
   form.addEventListener("submit", triangleMath);
+  // form.removeEventListener("submit", triangleMath);
 })
