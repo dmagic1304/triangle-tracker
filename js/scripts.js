@@ -11,18 +11,21 @@ if a+b <=c || a + c <= b || b + c <= a
 // BI
 
 // UI
-function triangleMath () {
+function triangleMath(e) {
+  e.preventDefault();
   const a = document.getElementById("number-one").value;
   const b = document.getElementById("number-two").value;
   const c = document.getElementById("number-three").value;
 
-  document.getElementById("equilateral").removeAttribute("class");
-  document.getElementById("icosceles").removeAttribute("class");
-  document.getElementById("scalene").removeAttribute("class");
-  document.getElementById("not-triagle").removeAttribute("class");
+  // document.getElementById("equilateral").removeAttribute("class") ;
+  // document.getElementById("icosceles").removeAttribute("class");
+  // document.getElementById("scalene").removeAttribute("class");
+  
 
   // if a+b <=c || a + c <= b || b + c <= a
-
+  if(a + b <= c || a + c <= b || b + c <= a){ 
+    document.getElementById("not-triangle").removeAttribute("class")
+  } 
 }
 
 window.addEventListener("load", function(){
