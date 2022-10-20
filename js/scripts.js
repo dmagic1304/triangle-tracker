@@ -16,11 +16,16 @@ function triangleMath () {
   const b = document.getElementById("number-two").value;
   const c = document.getElementById("number-three").value;
 
-  
+  document.getElementById("equilateral").removeAttribute("class");
+  document.getElementById("icosceles").removeAttribute("class");
+  document.getElementById("scalene").removeAttribute("class");
+  document.getElementById("not-triagle").removeAttribute("class");
+
+  // if a+b <=c || a + c <= b || b + c <= a
 
 }
 
 window.addEventListener("load", function(){
   const form = document.querySelector("form");
-  form.addEventListener("submit", function());
+  form.addEventListener("submit", triangleMath);
 })
