@@ -26,7 +26,7 @@ function triangleMath(e) {
   } else if (a === b && b === c && c === a) {
     document.getElementById("equilateral").removeAttribute("class");
 
-  } else if ( )
+  } else if ( (a === b) || (b === c) || (c === a) )
     document.getElementById("icosceles").removeAttribute("class");
     console.log("in icosceles");
 }
