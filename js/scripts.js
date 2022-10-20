@@ -17,15 +17,18 @@ function triangleMath(e) {
   const b = document.getElementById("number-two").value;
   const c = document.getElementById("number-three").value;
 
-  // document.getElementById("equilateral").removeAttribute("class") ;
-  // document.getElementById("icosceles").removeAttribute("class");
   // document.getElementById("scalene").removeAttribute("class");
   
 
   // if a+b <=c || a + c <= b || b + c <= a
   if(a + b <= c || a + c <= b || b + c <= a){ 
-    document.getElementById("not-triangle").removeAttribute("class")
-  } 
+    document.getElementById("not-triangle").removeAttribute("class");
+  } else if (a === b && b === c && c === a) {
+    document.getElementById("equilateral").removeAttribute("class");
+
+  } else if ( )
+    document.getElementById("icosceles").removeAttribute("class");
+    console.log("in icosceles");
 }
 
 window.addEventListener("load", function(){
