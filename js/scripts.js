@@ -12,7 +12,7 @@ if a+b <=c || a + c <= b || b + c <= a
 
 // UI
 function triangleMath(e) {
-  e.preventDefault();
+e.preventDefault();
   const a = parseInt(document.getElementById("number-one").value);
   const b = parseInt(document.getElementById("number-two").value);
   const c = parseInt(document.getElementById("number-three").value);
@@ -30,6 +30,8 @@ function triangleMath(e) {
     document.getElementById("icosceles").removeAttribute("class");
   } else if (a !== b && b !== c && c !== a) {
     document.getElementById("scalene").removeAttribute("class");
+  } else {
+    window.prompt("Numbers only please.")
   }
 }
 
