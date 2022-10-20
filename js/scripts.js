@@ -11,9 +11,16 @@ if a+b <=c || a + c <= b || b + c <= a
 // BI
 
 // UI
+function triangleMath () {
+  const a = document.getElementById("number-one").value;
+  const b = document.getElementById("number-two").value;
+  const c = document.getElementById("number-three").value;
 
-const numberOne = document.getElementById("number-one").value;
-const numberTwo = document.getElementById("number-two").value;
-const numberThree = document.getElementById("number-three").value;
+  
 
+}
 
+window.addEventListener("load", function(){
+  const form = document.querySelector("form");
+  form.addEventListener("submit", function());
+})
